@@ -6,7 +6,7 @@ import { ColorSet } from './color-calculation/color-set';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   ColorCalculationService: ColorCalculationService;
