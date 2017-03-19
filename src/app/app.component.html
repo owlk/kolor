@@ -1,3 +1,30 @@
-<h1>
-  {{title}}
-</h1>
+<input [(ngModel)]="baseColorCode" (ngModelChange)="baseColorChanged()" />
+
+<br />
+<color-square [color]="colorSet.baseColor"> </color-square>
+
+<br />
+<color-square [color]="colorSet.complementaryColor"> </color-square>
+
+<div>
+  <div class="colorSquare" [ngStyle]="{'background-color': colorSet.mixedBaseColor}"> </div>
+  <color-square [color]="colorSet.mixedBaseColor"> </color-square>
+
+  <div class="colorSquare" [ngStyle]="{'background-color': colorSet.mixedComplementaryColor}"> </div>
+  <color-square [color]="colorSet.mixedComplementaryColor"> </color-square>
+</div>
+
+<div>
+  <color-square [color]="colorSet.baseNeutrals[0]"> </color-square>
+
+  <color-square [color]="colorSet.baseNeutrals[1]"> </color-square>
+
+  <color-square [color]="colorSet.baseNeutrals[2]"> </color-square>
+
+  <color-square [color]="colorSet.complementaryNeutrals[0]"> </color-square>
+
+  <color-square [color]="colorSet.complementaryNeutrals[1]"> </color-square>
+
+  <color-square [color]="colorSet.complementaryNeutrals[2]"> </color-square>
+</div>
+

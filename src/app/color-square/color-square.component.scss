@@ -1,0 +1,15 @@
+.colorSquare{
+    $size: 100px;
+    width: $size;
+    height: $size;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.colorCode{
+     position: absolute; 
+     right: 0; 
+     bottom: 0;
+     background: rgba(255,255,255,.5);
+}
